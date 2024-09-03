@@ -1,23 +1,22 @@
-# מטלה 2 - גרפים והעמסת אופרטורים
+# Graph Algorithms Project
 
-במטלה הקודמת מימשתם את המחלקה `Graph.cpp` המאפשרת ייצוג של גרפים בעזרת מטריצת שכנויות. במטלה הזאת, אתם תרחיבו את המחלקה ותוסיפו תמיכה באופרטורים חשבוניים על גרפים.
-כאמור, הגרפים מיוצגים בעזרת מטריצת שכנויות, לכן כל האופרטורים צריכים להיות חוקיים עבור מטריצות (כמו שלמדתם בקורס אלגברה לינארית).
+This project implements a Graph class and various graph algorithms in C++. It provides functionality for creating, manipulating, and analyzing graphs.
 
-אתם תצטרכו להוסיף את האופרטורים הבאים:
+## Features
 
-- שישה אופרטורים חשבוניים: חיבור (+) הוספה (+=) פלוס אונרי (+), ושלושת האופרטורים המקבילים לחיסור (-). כאמור, חיבור/חיסור של שתי מטריצות מוגדר רק על מטריצות מאותו סדר גודל nXn. ניסיון לחבר/לחסר שתי מטריצות שלא מקיימות תנאי זה יגרום לזריקת שגיאה.
-- שישה אופרטורי השוואה: גדול, גדול-או-שווה, קטן, קטן-או-שווה, שווה, לא-שווה. לשם מטלה זו כללי השוואת גרפים הם כדלקמן:
+- Graph representation using adjacency matrix
+- Basic graph operations (addition, subtraction, multiplication)
+- Graph comparison operators
+- Various graph algorithms:
+  - Bipartite Graph Check
+  - Cycle Detection
+  - Connectivity Check
+  - Shortest Path Finding
+  - Negative Cycle Detection
 
-  1. גרפים G1 ו-G2 ייקראו שווים אם הם מאותו סדר גודל ומכילים את אותן הצלעות (והמשקלים של הצלעות זהים).
-  2. גרף G2 גדול מגרף G1 אם הגרף G1 מוכל ממש בגרף G2.
+## File Structure
 
-- הגדלה ב-1 (++) והקטנה ב-1 (--) לפני ואחרי המספר. פעולה זו תגדיל או תקטין ב-1 את כל המשקלים של הצלעות בגרף.
-- הכפלה בסקלר שלם (`int`) - מכפיל את המשקל של כל הצלעות.
-- הכפלת גרפים - אנחנו מגדירים את פעולת הכפל בין גרף G1 לגרף G2 על ידי מכפלה של המטריצות המייצגות של שני הגרפים. התוצאה צריכה להיות מטריצה המייצגת גרף. ניסיון לבצע כפל בין גרפים בגדלים שונים צריך לזרוק שגיאה.
-- אופרטור פלט - הדפסה הגיונית של הגרף (צורת ההפדסה היא לשיקולכם).
-
-
-כמו כן, עליכם לכלול גם את הקובץ `Algorithms.cpp` מהמטלה הקודמת ולראות כיצד הפונקציות שהגדרתם בפעם הקודמת משתנות עכשיו. בנוסף לקבצים של המטלה אתם נדרשים להגיש גם קובץ README המתאר את אופן המימוש ואת החלוקה שביצעתם בקוד (סוג של מדריך משתמש).
-עליכם לכתוב בתחילת כל קובץ את מספר תעודת הזהות שלכם ואת המייל. אי עמידה בהנחיות תגרור הפחתה בציון.
-בהצלחה!
+- `Graph.hpp` and `Graph.cpp`: Define and implement the Graph class
+- `Algorithms.hpp` and `Algorithms.cpp`: Define and implement various graph algorithms
+- `main.cpp` (not provided): Contains the main function to run and test the project
 
